@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>College Notes</title>
+    <link rel="stylesheet" href="css/notes.css">
+</head>
+<body>
+
+<h1>College Notes</h1>
+<div class="filters">
+
+    <input
+        type="text"
+        id="search"
+        placeholder="Search Notes..."
+    >
+
+    <select id="branchFilter">
+        <option value="">All Branches</option>
+        <option>CSE</option>
+        <option>IT</option>
+        <option>ECE</option>
+        <option>ME</option>
+        <option>CE</option>
+    </select>
+
+    <select id="semesterFilter">
+        <option value="">All Semesters</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>
+    </select>
+
+</div>
+
+<div id="notesContainer"></div>
+
+<script src="js/notes.js"></script>
+
+</body>
+</html>

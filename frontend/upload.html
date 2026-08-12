@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Notes | College Notes Portal</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-light">
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#">
+            📚 College Notes Portal
+        </a>
+
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="dashboard.html">Dashboard</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="upload.html">Upload</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-warning" href="#" id="logoutBtn">
+                        Logout
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Upload Card -->
+
+<div class="container mt-5">
+
+<div class="row justify-content-center">
+
+<div class="col-lg-8">
+
+<div class="card shadow border-0">
+
+<div class="card-header bg-primary text-white">
+
+<h3 class="text-center">
+Upload College Notes
+</h3>
+
+</div>
+
+<div class="card-body">
+
+<form id="uploadForm">
+
+<!-- Title -->
+
+<div class="mb-3">
+
+<label class="form-label">
+
+Title
+
+</label>
+
+<input
+type="text"
+class="form-control"
+id="title"
+placeholder="Enter Note Title"
+required>
+
+</div>
+
+<!-- Subject -->
+
+<div class="mb-3">
+
+<label class="form-label">
+
+Subject
+
+</label>
+
+<input
+type="text"
+class="form-control"
+id="subject"
+placeholder="DBMS"
+required>
+
+</div>
+
+<div class="row">
+
+<div class="col-md-6">
+
+<div class="mb-3">
+
+<label class="form-label">
+
+Semester
+
+</label>
+
+<select
+class="form-select"
+id="semester"
+required>
+
+<option value="">Select</option>
+
+<option>1</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+<option>5</option>
+<option>6</option>
+<option>7</option>
+<option>8</option>
+
+</select>
+
+</div>
+
+</div>
+
+<div class="col-md-6">
+
+<div class="mb-3">
+
+<label class="form-label">
+
+Branch
+
+</label>
+
+<select
+class="form-select"
+id="branch"
+required>
+
+<option value="">Select</option>
+
+<option>CSE</option>
+<option>AI</option>
+<option>IT</option>
+<option>ECE</option>
+<option>EE</option>
+<option>ME</option>
+<option>CE</option>
+
+</select>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Description -->
+
+<div class="mb-3">
+
+<label class="form-label">
+
+Description
+
+</label>
+
+<textarea
+class="form-control"
+rows="4"
+id="description"
+placeholder="Short description..."
+required></textarea>
+
+</div>
+
+<!-- File -->
+
+<div class="mb-3">
+
+<label class="form-label">
+
+Choose File
+
+</label>
+
+<input
+type="file"
+class="form-control"
+id="file"
+accept=".pdf,.doc,.docx,.ppt,.pptx"
+required>
+
+<small class="text-muted">
+Allowed: PDF, DOC, DOCX, PPT, PPTX (Max 10 MB)
+</small>
+
+</div>
+
+<div class="d-grid">
+
+<button
+class="btn btn-primary btn-lg"
+type="submit">
+
+Upload Notes
+
+</button>
+
+</div>
+
+</form>
+
+<div
+id="status"
+class="mt-3 text-center fw-bold">
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="js/upload.js"></script>
+
+</body>
+</html>

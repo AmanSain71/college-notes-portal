@@ -1,0 +1,226 @@
+/* ===========================
+   NOTES PAGE
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
+}
+
+body{
+    background:#f4f7fc;
+    padding:30px;
+}
+
+h1{
+    text-align:center;
+    color:#0d6efd;
+    margin-bottom:30px;
+}
+
+/* Search & Filters */
+
+.filters{
+    display:flex;
+    gap:15px;
+    justify-content:center;
+    flex-wrap:wrap;
+    margin-bottom:30px;
+}
+
+.filters input,
+.filters select{
+
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:15px;
+    min-width:220px;
+    transition:.3s;
+
+}
+
+.filters input:focus,
+.filters select:focus{
+
+    outline:none;
+    border-color:#0d6efd;
+    box-shadow:0 0 8px rgba(13,110,253,.25);
+
+}
+
+/* Notes Grid */
+
+#notesContainer{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:25px;
+
+}
+
+/* Card */
+
+.card{
+
+    background:#fff;
+    border-radius:15px;
+    padding:22px;
+    box-shadow:0 8px 20px rgba(0,0,0,.12);
+    transition:.3s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.card h2{
+
+    color:#0d6efd;
+    margin-bottom:15px;
+
+}
+
+.card p{
+
+    color:#555;
+    margin-bottom:10px;
+    line-height:1.6;
+
+}
+
+/* Download Button */
+
+.btn{
+
+    display:inline-block;
+    margin-top:15px;
+    padding:10px 20px;
+    background:#0d6efd;
+    color:#fff;
+    text-decoration:none;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    transition:.3s;
+
+}
+
+.btn:hover{
+
+    background:#0b5ed7;
+
+}
+
+/* Delete Button */
+
+.deleteBtn{
+
+    margin-left:10px;
+    margin-top:15px;
+    padding:10px 20px;
+    border:none;
+    background:#dc3545;
+    color:#fff;
+    border-radius:8px;
+    cursor:pointer;
+    transition:.3s;
+
+}
+
+.deleteBtn:hover{
+
+    background:#bb2d3b;
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+    body{
+        padding:15px;
+    }
+
+    .filters{
+        flex-direction:column;
+    }
+
+    .filters input,
+    .filters select{
+        width:100%;
+    }
+
+    .btn,
+    .deleteBtn{
+        width:100%;
+        margin-left:0;
+    }
+
+}
+
+/* ===========================
+   MY NOTES NAVBAR
+=========================== */
+
+.navbar{
+    background:#0d6efd;
+    color:#fff;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 30px;
+    border-radius:10px;
+    margin-bottom:30px;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+.navbar h2{
+    font-size:24px;
+    font-weight:600;
+}
+
+.navbar button{
+    background:#fff;
+    color:#0d6efd;
+    border:none;
+    padding:10px 20px;
+    border-radius:8px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.navbar button:hover{
+    background:#e9ecef;
+    transform:translateY(-2px);
+}
+
+/* Empty State */
+
+#notesContainer h3{
+    text-align:center;
+    color:#666;
+    margin-top:50px;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+    .navbar{
+        flex-direction:column;
+        gap:15px;
+        text-align:center;
+    }
+
+    .navbar button{
+        width:100%;
+    }
+
+}

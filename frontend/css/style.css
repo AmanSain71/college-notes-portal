@@ -1,0 +1,148 @@
+body{
+    background:#f5f7fb;
+}
+
+.card{
+    border-radius:15px;
+}
+
+.card-header{
+    border-radius:15px 15px 0 0 !important;
+}
+
+.btn{
+    border-radius:10px;
+}
+
+.form-control,
+.form-select{
+    border-radius:10px;
+}
+
+.navbar-brand{
+    font-weight:bold;
+}
+
+/* ==========================
+   GLOBAL THEME
+==========================*/
+
+body{
+    background:#f4f7fc;
+    font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
+}
+
+/* Navbar */
+
+.navbar{
+    box-shadow:0 4px 12px rgba(0,0,0,.15);
+}
+
+.navbar-brand{
+    font-size:24px;
+    font-weight:bold;
+}
+
+.nav-link{
+    font-weight:600;
+}
+
+.nav-link:hover{
+    color:#ffd54f !important;
+}
+
+/* Card */
+
+.card{
+    border:none;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+
+.card-header{
+    padding:20px;
+}
+
+.card-header h3{
+    margin:0;
+    font-weight:bold;
+}
+
+.card-body{
+    padding:30px;
+}
+
+/* Labels */
+
+.form-label{
+    font-weight:600;
+    color:#444;
+}
+
+/* Inputs */
+
+.form-control,
+.form-select{
+
+    border-radius:10px;
+    padding:12px;
+
+    transition:.3s;
+
+}
+
+.form-control:focus,
+.form-select:focus{
+
+    border-color:#0d6efd;
+
+    box-shadow:0 0 8px rgba(13,110,253,.25);
+
+}
+
+/* Upload Button */
+
+.btn-primary{
+
+    border-radius:10px;
+
+    padding:12px;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+.btn-primary:hover{
+
+    transform:translateY(-2px);
+
+}
+
+/* Status */
+
+#status{
+
+    font-size:18px;
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.card-body{
+
+padding:20px;
+
+}
+
+.navbar-brand{
+
+font-size:20px;
+
+}
+
+}

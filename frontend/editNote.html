@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Note</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Edit Note</h1>
+
+    <form id="editForm">
+
+        <input
+            type="text"
+            id="title"
+            placeholder="Title"
+            required
+        >
+
+        <input
+            type="text"
+            id="subject"
+            placeholder="Subject"
+            required
+        >
+
+        <input
+            type="text"
+            id="semester"
+            placeholder="Semester"
+            required
+        >
+
+        <input
+            type="text"
+            id="branch"
+            placeholder="Branch"
+            required
+        >
+
+        <textarea
+            id="description"
+            placeholder="Description"
+            required
+        ></textarea>
+
+        <button type="submit">
+            Update Note
+        </button>
+
+    </form>
+
+</div>
+
+<script src="js/editNote.js"></script>
+
+</body>
+</html>

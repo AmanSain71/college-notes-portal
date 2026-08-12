@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | College Notes Sharing Portal</title>
+
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+
+<nav class="navbar">
+
+    <h2>College Notes Sharing Portal</h2>
+
+    <div>
+
+        <span id="welcomeUser"></span>
+
+        <button id="logoutBtn">
+            Logout
+        </button>
+
+    </div>
+
+</nav>
+
+<div class="container">
+
+    <h1>Dashboard</h1>
+
+    <div class="stats">
+
+    <div class="stat-card">
+        <h3>Total Notes</h3>
+        <h1 id="totalNotes">0</h1>
+    </div>
+
+    <div class="stat-card">
+        <h3>My Notes</h3>
+        <h1 id="myNotes">0</h1>
+    </div>
+
+    <div class="stat-card">
+        <h3>Subjects</h3>
+        <h1 id="totalSubjects">0</h1>
+    </div>
+
+    <div class="stat-card">
+        <h3>Branches</h3>
+        <h1 id="totalBranches">0</h1>
+    </div>
+
+</div>
+
+    <div class="cards">
+
+        <div class="card">
+
+            <h2>Upload Notes</h2>
+
+            <p>Upload your study notes.</p>
+
+            <button onclick="location.href='upload.html'">
+                Upload
+            </button>
+
+        </div>
+
+        <div class="card">
+
+            <h2>View Notes</h2>
+
+            <p>Browse all uploaded notes.</p>
+
+            <button onclick="location.href='notes.html'">
+                View Notes
+            </button>
+
+        </div>
+
+        <div class="card">
+
+            <h2>My Notes</h2>
+
+            <p>Manage your uploaded notes.</p>
+
+            <button onclick="location.href='myNotes.html'">
+                My Notes
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="js/dashboard.js"></script>
+
+</body>
+</html>
