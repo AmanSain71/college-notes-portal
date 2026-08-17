@@ -1,6 +1,6 @@
 const bcrypt = require("bcryptjs");
 const { GetCommand, PutCommand } = require("@aws-sdk/lib-dynamodb");
-const { v4: uuidv4 } = require("uuid");
+const { randomUUID } = require("crypto");
 
 const dynamoDB = require("../config/dynamodb");
 const generateToken = require("../utils/generateToken");
@@ -39,7 +39,7 @@ const registerUser = async (req, res) => {
 
     // Create user
     const user = {
-      userId: uuidv4(),
+      userId: randomUUID(),
       name,
       email,
       password: hashedPassword,
