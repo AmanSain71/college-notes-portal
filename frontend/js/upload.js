@@ -25,7 +25,7 @@ form.addEventListener("submit", async (e) => {
     status.innerHTML = "Uploading...";
     status.style.color = "blue";
 
-    const res = await fetch("http://college-notes-portal-b79p.vercel.app/api/notes/upload", {
+    const res = await fetch("https://college-notes-portal-b79p.vercel.app/api/notes/upload", {
       method: "POST",
       headers: {
         Authorization: `Bearer ${token}`

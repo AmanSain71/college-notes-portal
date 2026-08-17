@@ -38,7 +38,7 @@ async function loadDashboardStats() {
 
     try {
 
-        const res = await fetch("http://college-notes-portal-b79p.vercel.app/api/notes");
+        const res = await fetch("https://college-notes-portal-b79p.vercel.app/api/notes");
 
         const notes = await res.json();
 

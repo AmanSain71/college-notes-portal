@@ -25,7 +25,7 @@ editForm.addEventListener("submit", async (e) => {
     try {
 
         const res = await fetch(
-            `http://college-notes-portal-b79p.vercel.app/api/notes/${noteId}`,
+            `https://college-notes-portal-b79p.vercel.app/api/notes/${noteId}`,
             {
                 method: "PUT",
                 headers: {
