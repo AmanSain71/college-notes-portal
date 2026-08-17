@@ -11,7 +11,7 @@ async function loadMyNotes() {
 
     try {
 
-        const res = await fetch("http://localhost:5000/api/notes/my", {
+        const res = await fetch("http://college-notes-portal-b79p.vercel.app/api/notes/my", {
             headers: {
                 Authorization: `Bearer ${token}`
             }
@@ -83,7 +83,7 @@ async function deleteNote(noteId) {
 
     try {
 
-        const res = await fetch(`http://localhost:5000/api/notes/${noteId}`, {
+        const res = await fetch(`http://college-notes-portal-b79p.vercel.app/api/notes/${noteId}`, {
 
             method: "DELETE",
 
