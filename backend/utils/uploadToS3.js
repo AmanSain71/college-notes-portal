@@ -1,17 +1,14 @@
-const fs = require("fs");
 const path = require("path");
 const { PutObjectCommand } = require("@aws-sdk/client-s3");
 const s3 = require("../config/aws");
 
 const uploadToS3 = async (file) => {
-  const fileStream = fs.createReadStream(file.path);
-
   const key = `${Date.now()}-${path.basename(file.originalname)}`;
 
   const command = new PutObjectCommand({
     Bucket: process.env.AWS_BUCKET_NAME,
     Key: key,
-    Body: fileStream,
+    Body: file.buffer,
     ContentType: file.mimetype,
   });
 
@@ -23,9 +20,6 @@ const uploadToS3 = async (file) => {
 
   console.log("S3 Upload Success");
   console.log(result);
-
-  // Delete local file after upload
-  fs.unlinkSync(file.path);
 
   return {
     key,
