@@ -1,5 +1,5 @@
 const { PutCommand, ScanCommand, DeleteCommand, UpdateCommand, } = require("@aws-sdk/lib-dynamodb");
-const { v4: uuidv4 } = require("uuid");
+const { randomUUID } = require("crypto");
 
 const dynamoDB = require("../config/dynamodb");
 const uploadToS3 = require("../utils/uploadToS3");
@@ -31,7 +31,7 @@ const uploadNote = async (req, res) => {
     const uploadedFile = await uploadToS3(req.file);
 
     const note = {
-      noteId: uuidv4(),
+      noteId: randomUUID(),
       title,
       subject,
       semester,
